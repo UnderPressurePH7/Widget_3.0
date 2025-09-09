@@ -5,14 +5,14 @@ export const GAME_POINTS = {
 };
 
 export const STATS = {
-    // https://node-websocket-758468a49fee.herokuapp.com/api/battle-stats/
-    BATTLE: "aHR0cHM6Ly9ub2RlLXdlYnNvY2tldC03NTg0NjhhNDlmZWUuaGVyb2t1YXBwLmNvbS9hcGkvYmF0dGxlLXN0YXRzLw==",
+    // https://heroku-ws-da606c26bc25.herokuapp.com/api/battle-stats/
+    BATTLE: "aHR0cHM6Ly9oZXJva3Utd3MtZGE2MDZjMjZiYzI1Lmhlcm9rdWFwcC5jb20vYXBpL2JhdHRsZS1zdGF0cy8=",
     
-    // https://node-websocket-758468a49fee.herokuapp.com/api/status
-    STATUS: "aHR0cHM6Ly9ub2RlLXdlYnNvY2tldC03NTg0NjhhNDlmZWUuaGVyb2t1YXBwLmNvbS9hcGkvc3RhdHVz",
+    // https://heroku-ws-da606c26bc25.herokuapp.com/api/status
+    STATUS: "aHR0cHM6Ly9oZXJva3Utd3MtZGE2MDZjMjZiYzI1Lmhlcm9rdWFwcC5jb20vYXBpL3N0YXR1cw==",
     
-    // https://node-websocket-758468a49fee.herokuapp.com
-    WEBSOCKET_URL: "aHR0cHM6Ly9ub2RlLXdlYnNvY2tldC03NTg0NjhhNDlmZWUuaGVyb2t1YXBwLmNvbQ=="
+    // https://heroku-ws-da606c26bc25.herokuapp.com
+    WEBSOCKET_URL: "aHR0cHM6Ly9oZXJva3Utd3MtZGE2MDZjMjZiYzI1Lmhlcm9rdWFwcC5jb20="
 };
 
 export const CONFIG = {
@@ -32,4 +32,5 @@ export const CONFIG = {
 export const CACHE_KEYS = {
   GAME_STATE: 'gameState',
   ACCESS_KEY: 'accessKey'
+
 };
