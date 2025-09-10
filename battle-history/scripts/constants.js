@@ -1,7 +1,7 @@
 export const GAME_POINTS = {
     POINTS_PER_DAMAGE: 1,
     POINTS_PER_FRAG: 400,
-    POINTS_PER_TEAM_WIN: 2000
+    POINTS_PER_TEAM_WIN: 1000
 };
 
 export const STATS = {
