@@ -418,12 +418,17 @@ class CoreService {
   }
 
   getCurrentBattleId() {
-    for (const arenaId in this.BattleStats) {
-      if (this.BattleStats[arenaId].duration === 0) {
-        return arenaId;
+    let currentId = null;
+    let latestStartTime = -Infinity;
+
+    for (const [arenaId, stats] of Object.entries(this.BattleStats)) {
+      if (stats.duration === 0 && stats.startTime && stats.startTime > latestStartTime) {
+        latestStartTime = stats.startTime;
+        currentId = arenaId;
       }
     }
-    return null;
+
+    return currentId;
   }
 
   calculatePlayerData(playerId) {
