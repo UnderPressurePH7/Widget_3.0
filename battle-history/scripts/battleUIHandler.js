@@ -906,8 +906,11 @@ class BattleUIHandler {
             .join('<br>');
     }
 
-    formatDuration(seconds) {
-        if (!seconds) return '0:00';
+    formatDuration(time) {
+        if (!time) return '0:00';
+
+        let seconds = time > 86400 ? Math.floor(time / 1000) : time;
+
         const minutes = Math.floor(seconds / 60);
         const remainingSeconds = seconds % 60;
         return `${minutes}:${remainingSeconds.toString().padStart(2, '0')}`;
