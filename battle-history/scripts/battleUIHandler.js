@@ -909,7 +909,7 @@ class BattleUIHandler {
     formatDuration(time) {
         if (!time) return '0:00';
 
-        let seconds = time > 86400 ? Math.floor(time / 1000) : time;
+        let seconds = Math.floor(time / 1000);
 
         const minutes = Math.floor(seconds / 60);
         const remainingSeconds = seconds % 60;
