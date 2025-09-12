@@ -1,7 +1,7 @@
 export const GAME_POINTS = {
     POINTS_PER_DAMAGE: 1,
     POINTS_PER_FRAG: 400,
-    POINTS_PER_TEAM_WIN: 1000
+    POINTS_PER_TEAM_WIN: 0
 };
 
 export const STATS = {
@@ -28,4 +28,5 @@ export const CACHE_KEYS = {
   ACCESS_KEY: 'accessKey'
 
 };
+
 
